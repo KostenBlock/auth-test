@@ -1,0 +1,24 @@
+@mixin dynamic-gap($gap-value) {
+	grid-gap: $gap-value;
+}
+
+.gap-10 {
+	@include dynamic-gap(10px);
+}
+
+.gap-15 {
+	@include dynamic-gap(15px);
+}
+
+.gap-20 {
+	@include dynamic-gap(20px);
+}
+
+.gap-30 {
+	@include dynamic-gap(30px);
+}
+
+.gap-35 {
+	@include dynamic-gap(35px);
+}
+

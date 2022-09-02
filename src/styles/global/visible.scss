@@ -1,0 +1,47 @@
+@import "sizes";
+
+// Отображение элементов
+.desktop-tablet-only {
+	display: grid !important;
+
+	@media screen and (max-width: $mobile) {
+		display: none !important;
+	}
+}
+
+.tablet-mobile-only {
+	display: none;
+
+	@media screen and (max-width: $tablet) {
+		display: grid!important;
+	}
+}
+
+.mobile-only {
+	display: none;
+
+	@media screen and (max-width: $mobile) {
+		display: grid !important;
+	}
+}
+
+.table-only {
+	display: none;
+
+	@media screen and (max-width: $tablet) {
+		display: grid !important;
+	}
+
+	@media screen and (max-width: $mobile) {
+		display: none !important;
+	}
+}
+
+.desktop-only {
+	display: grid!important;
+
+	@media screen and (max-width: $tablet) {
+		display: none!important;
+	}
+}
+

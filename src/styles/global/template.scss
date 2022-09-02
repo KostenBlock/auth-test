@@ -1,0 +1,188 @@
+@import "sizes.scss";
+@import "colors.scss";
+
+.wrapper {
+	width: 100%;
+	height: auto;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	background-color: transparent;
+}
+
+.content {
+	width: 90%;
+	max-width: 90%;
+	margin: auto auto;
+}
+
+.column {
+	display: grid;
+	grid-auto-flow: column;
+}
+
+.row {
+	display: grid;
+	grid-auto-flow: row;
+}
+
+.center-content {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+.center-items {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
+.start-content {
+	display: grid;
+	place-content: start;
+}
+
+.start-items {
+	display: grid;
+	place-items: start;
+}
+
+.end-content {
+	display: grid;
+	place-content: end;
+}
+
+.end-items {
+	display: grid;
+	place-items: end;
+}
+
+.column-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	@media screen and (max-width: $tablet) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.column-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+	@media screen and (max-width: $tablet) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.horizontal-center-content {
+	display: grid;
+	align-content: center;
+}
+
+.horizontal-center-items {
+	display: grid;
+	align-items: center;
+}
+
+.vertical-center-content {
+	display: grid;
+	justify-content: center;
+}
+
+.vertical-center-items {
+	display: grid;
+	justify-items: center;
+}
+
+.horizontal-start-content {
+	display: grid;
+	align-content: start;
+}
+
+.horizontal-start-items {
+	display: grid;
+	align-items: start;
+}
+
+.vertical-start-content {
+	display: grid;
+	justify-content: start;
+}
+
+.vertical-start-items {
+	display: grid;
+	justify-items: start;
+}
+
+.horizontal-end-content {
+	display: grid;
+	align-content: end;
+}
+
+.horizontal-end-items {
+	display: grid;
+	align-items: end;
+}
+
+.vertical-end-content {
+	display: grid;
+	justify-content: end;
+}
+
+.vertical-end-items {
+	display: grid;
+	justify-items: start;
+}
+
+// image
+.picture-container {
+	position: relative;
+	overflow: hidden;
+	display: grid;
+	justify-content: stretch;
+	align-content: stretch;
+}
+
+.cover-image {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: 0.3s;
+}
+
+.contain-image {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	transition: 0.3s;
+	display: flex;
+	align-items: flex-start;
+}
+
+// gaps
+.plain-gap {
+	grid-gap: 20px;
+}
+
+// loaders
+.loader-absolute {
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255, 248, 220, 0.445);
+}
+
+.absolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+};

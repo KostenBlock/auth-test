@@ -1,0 +1,13 @@
+@import "styles/global/template";
+
+.wrapper {
+  position: sticky;
+  top: 0;
+  height: 118px;
+  background-color: $yellow-100;
+
+  .content {
+    align-items: center;
+    justify-content: space-between;
+  };
+};

@@ -1,0 +1,13 @@
+@import 'src/stylesles/global/template';
+
+.wrapper {
+  gap: 180px;
+
+  @media screen and (max-width: $tablet) {
+    gap: 100px
+  };
+
+  @media screen and (max-width: $mobile) {
+    gap: 80px;
+  };
+};

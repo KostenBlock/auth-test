@@ -1,0 +1,32 @@
+@import "styles/global/template";
+
+.card__container {
+  align-content: start;
+  border: 5px solid $blue-100;
+  border-radius: $light-radius;
+  padding: 25px 20px;
+  max-width: 470px;
+
+  .card__head {
+    align-items: start;
+    gap: 30px;
+
+    @media screen and (max-width: $tablet) {
+      grid-auto-flow: row;
+      gap: 20px;
+    };
+
+    .picture__container {
+      height: 150px;
+      width: 150px;
+      background: #333333;
+    };
+  };
+
+  .comment__container {
+
+    @media screen and (max-width: $tablet) {
+      gap: 10px;
+    };
+  };
+};

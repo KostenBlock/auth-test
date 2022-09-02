@@ -1,0 +1,28 @@
+@import "styles/global/template";
+
+.wrapper {
+  align-content: start;
+  padding: 20px 0 40px;
+  min-height: inherit;
+
+  @media screen and (max-width: $mobile) {
+    padding: 10px 0 30px;
+  };
+
+  .content {
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 10px;
+
+    @media screen and (max-width: $tablet) {
+      row-gap: 25px;
+      column-gap: 20px;
+    };
+
+    @media screen and (max-width: $mobile) {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    };
+  };
+};

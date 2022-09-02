@@ -1,0 +1,57 @@
+@import "sizes";
+@import "colors";
+
+.font-bold {
+	font-weight: bold;
+};
+
+.font-normal {
+	font-weight: 800;
+};
+
+.fixed-spaces {
+	white-space: pre-line;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.start-text {
+	text-align: start;
+}
+
+.end-text {
+	text-align: end;
+}
+
+.block__regular-header {
+	font-size: 30px;
+	line-height: 44px;
+	font-weight: bold;
+}
+
+.block__regular-text {
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.block__regular-text-small {
+	font-size: 16px;
+	line-height: 19px;
+}
+
+// кнопки
+.button__regular-text {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.text-blue {
+	color: $blue-100;
+}
+
+.text-red {
+	color: $red-100;
+}
