@@ -20,6 +20,10 @@
       padding: 15px 35px 30px;
     };
 
+    @media screen and (max-width: $mobile-sm) {
+      padding: 15px 2.5%;
+    };
+
     .form__container {
       gap: 25px;
 
